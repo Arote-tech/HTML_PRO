@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Multiplication of Matrices</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+
+    <style type="text/css">
+        body {
+            background-color: bisque;
+            background-position-x: center;
+            background-position-y: center;
+            width: 100vh;
+            height: 100vh;
+            position: static;
+            cursor: pointer;
+        }
+
+        div {
+            font: bolder;
+            width: 80vh;
+            display: grid;
+            position: absolute;
+
+        }
+
+        h4 {
+            font: 100;
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="matrixpage" id="Scalar-matrix">
+        <h4 class="inputInstruction"> Multiplication of matrices.</h4>
+
+        <script type="text/javascript">
+
+            A = [[5, -7, 13],
+            [12, 4, -3],
+            [11, -1, 4]];
+
+            B = [[0, -2, 15],
+            [6, 8, -2],
+            [15, 2, 7]];
+
+            result = math.multiply(A, B);
+            result.forEach((n) => document.write(n, '<BR>'))
+
+
+
+        </script>
+    </div>
+
+
+</body>
+
+
+</html>
